@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements - new.css</title>
+    <meta name="description" content="A classless CSS framework to write modern websites using only HTML.">
+    <meta name="keywords" content="newcss,new.css,css,xz,css framework,classless css,xz.style">
+    <meta property="og:title" content="new.css">
+    <meta property="og:url" content="https://newcss.net">
+    <meta property="og:description" content="A classless CSS framework to write modern websites using only HTML.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://newcss.net/_assets/og.png">
+    <link rel="stylesheet" href="/new.min.css">
+</head>
+<body>
+    <header>
+        <h1>new.css</h1>
+        <nav>
+            <a href="https://newcss.net">Home</a> /
+            <a href="https://newcss.net/usage/">Usage</a> /
+            <a href="https://newcss.net/usage/elements/">Elements</a> /
+            <a href="https://newcss.net/themes/">Themes</a> /
+            <a href="https://github.com/xz/new.css">GitHub</a> / 
+            <a href="https://discord.gg/hhuuC4w">Discord</a>
+        </nav>
+    </header>
+
+    <h1>Elements</h1>
+
+    <p>new.css takes advantage of semantic HTML elements. Here are some guidelines on how these should be used for the best results.</p>
+
+    <br>
+
+    <h2>Table of Contents</h2>
+    <ul>
+        <li><a href="#body">Body</a></li>
+    </ul>
+
+    <br>
+
+    <h2>Body</h2>
+    
+    <p>Use the <code>&lt;header&gt;</code> tag to create a large header for your page. <strong>Only use this at the very top of your <code>&lt;body&gt;</code></strong>!</p>
+
+    <br>
+
+    <h2>Buttons</h2>
+
+    <p>For a link button, wrap the button in an <code>&lt;a&gt;</code> tag. For example-</p>
+
+    <pre>
+&lt;a href=&quot;https://example.com&quot;&gt;
+  &lt;button&gt;Click me!&lt;/button&gt;
+&lt;/a&gt;</pre>
+
+    <br>
+
+    <h2>Code</h2>
+
+    <p>Use <code>&lt;code&gt;</code> for short inline code.</p>
+
+    <p>Use <code>&lt;pre&gt;</code> for code blocks.</p>
+
+    <blockquote>These two shouldn't be nested, but if they are, the child element will clear it's own style and match the parent.</blockquote>
+
+    <p>Use <code>&lt;kbd&gt;</code> for keyboard input. For example, <kbd>ALT + F4</kbd></p>
+
+    <br>
+
+    <h2>Details</h2>
+
+    <p>The <code>&lt;details&gt;</code> element can make a toggle-able dropdown without any JavaScript. Here's an example-</p>
+
+    <details>
+        <summary>Click me!</summary>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </details>
+
+    <p>Here's the code-</p>
+
+<pre>
+&lt;details&gt;
+  &lt;summary&gt;Click me!&lt;/summary&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/details&gt;    
+</pre>
+
+    <br>
+
+    <h2>Text</h2>
+
+    <p>Wrap all body text in <code>&lt;p&gt;</code> tags, unless it's the sole child of another element. Here are examples-</p>
+
+<pre>
+&lt;blockquote&gt;
+  Hello, world!
+&lt;/blockquote&gt;
+</pre>
+
+<pre>
+&lt;blockquote&gt;
+  &lt;p&gt;Hello, world!&lt;/p&gt;
+  &lt;button&gt;Click me!&lt;/button&gt;
+&lt;/blockquote&gt;
+</pre>
+
+<pre>
+&lt;ul&gt;
+  &lt;li&gt;Hello, world!&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Line 1&lt;/p&gt;
+    &lt;img src=&quot;https://example.com/image.png&quot;&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+    
+    <script async defer src="https://api.newcss.net/latest.js"></script>
+    <noscript><img src="https://api.newcss.net/noscript.gif" alt=""></noscript>
+
+</body>

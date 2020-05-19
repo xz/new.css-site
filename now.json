@@ -1,0 +1,10 @@
+{
+	"version": 2,
+	"cleanUrls": true,
+    "trailingSlash": true,
+    "redirects": [
+        { "source": "/old.css", "destination": "https://newcss.net/new.min.css" },
+        { "source": "/user", "destination": "/api/user", "permanent": false },
+        { "source": "/view-source", "destination": "https://github.com/zeit/now" }
+    ]
+}
